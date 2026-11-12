@@ -5,7 +5,7 @@
 
 <!-- Animated Typing Tagline -->
 <a href="https://github.com/DEMON-dev911/Pulse-CLI">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&duration=3000&pause=1000&color=1DA1F2&center=true&vCenter=true&width=820&lines=Ultra-fast+compiled+Rust+runtime+with+zero+heavy+dependencies;Autonomous+file+editing%2C+unified+diffs%2C+and+shell+execution;Native+support+for+macOS%2C+Windows%2C+Linux%2C+and+Omarchy;Connects+to+local+FreeLLMAPI%2C+Ollama%2C+Gemini%2C+and+OpenAI" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&duration=3000&pause=1000&color=1DA1F2&center=true&vCenter=true&width=820&lines=Ultra-fast+compiled+Rust+runtime+with+zero+heavy+dependencies;Autonomous+file+editing%2C+unified+diffs%2C+and+shell+execution;Native+support+for+macOS%2C+Windows%2C+Linux%2C+and+Omarchy;Works+out+of+the+box+with+built-in+credentials+or+your+own+API+keys" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -60,6 +60,8 @@
 
 | Capability | Description |
 | :--- | :--- |
+| **Zero-Config Ready** | Ships pre-configured with a built-in default API endpoint and credentials so you can launch and code immediately without initial setup. |
+| **Bring Your Own Key (BYOK)** | Easily override the built-in defaults with your own Gemini, Groq, OpenAI, Anthropic, OpenRouter, or local Ollama API keys. |
 | **Autonomous Tool Loop** | Reads files, previews color-coded unified diffs, applies atomic edits, and executes shell commands with live output streaming. |
 | **Project Context (`PULSE.md`)** | Automatically discovers `PULSE.md` or `.pulse.md` in the repository root to enforce project rules, architecture notes, and conventions. |
 | **Session Persistence** | Records every turn locally in JSONL format. Pick up previous work instantly using `--continue` or `--resume`. |
@@ -159,26 +161,38 @@ Remove-Item "$env:TEMP\pulse.zip"
 
 ---
 
-## Configuration
+## Configuration & API Keys
 
-Pulse supports any OpenAI-compatible `/v1/chat/completions` endpoint with automatic multi-provider fallback. Create a configuration file at `~/.config/pulse/.env` (Linux/macOS) or `%USERPROFILE%\.config\pulse\.env` (Windows), or place a `.env` file in your project root:
+Pulse works **immediately out of the box** using the pre-configured built-in API credentials—no manual configuration is required to start using it.
+
+If you prefer to use your own API keys, personal rate limits, or a local LLM server, you can override the built-in defaults at any time.
+
+### Option 1: Use the Built-In API Key (Zero Setup)
+
+Simply run `pulse` in your terminal right after installation. Pulse will automatically authenticate using its pre-packaged default gateway and fallback keys.
+
+### Option 2: Add Your Own API Keys (Optional)
+
+To override the default credentials with your own keys, create a `.env` file at `~/.config/pulse/.env` (Linux/macOS), `%USERPROFILE%\.config\pulse\.env` (Windows), or inside your project root:
 
 ```env
-# Primary Local Gateway (Priority 1)
+# Optional: Override with your own OpenAI-compatible local or cloud endpoint
 FREELLMAPI_URL="[http://127.0.0.1:31415/v1](http://127.0.0.1:31415/v1)"
-FREELLMAPI_KEY="your-local-gateway-key"
+FREELLMAPI_KEY=""
 
-# Fallback Cloud Providers (Evaluated in order if primary is offline)
-GEMINI_API_KEY=""
-GROQ_API_KEY=""
-ANTHROPIC_API_KEY=""
-OPENAI_API_KEY=""
-OPENROUTER_API_KEY=""
+# Optional: Add your personal API keys (Priority order from top to bottom)
+GEMINI_API_KEY="your-gemini-api-key"
+GROQ_API_KEY="your-groq-api-key"
+ANTHROPIC_API_KEY="your-anthropic-api-key"
+OPENAI_API_KEY="your-openai-api-key"
+OPENROUTER_API_KEY="your-openrouter-api-key"
 
 # Runtime Preferences
 PULSE_DEFAULT_TIMEOUT_SECS="30"
 PULSE_AUTO_FALLBACK="true"
 ```
+
+> **Configuration Precedence:** Shell environment variables take highest priority, followed by a local project `.env`, then `~/.config/pulse/.env`, and finally the built-in default API keys. You can also switch providers interactively at any time using the `/model` slash command.
 
 ---
 
@@ -229,7 +243,7 @@ Inside the interactive REPL, type `/` to access built-in and custom commands:
 | `/commit` | Generate a conventional commit message from staged/unstaged changes and commit. |
 | `/compact` | Summarize older conversation history to free up context window tokens. |
 | `/clear` | Wipe the current conversation context and reset token counters. |
-| `/model` | Switch between configured local and cloud LLM providers. |
+| `/model` | Switch between the built-in API key and your custom configured LLM providers. |
 | `/mcp` | Inspect connected Model Context Protocol servers and available tools. |
 | `/skills` | List custom Markdown slash commands loaded from `.pulse/commands/`. |
 
