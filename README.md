@@ -1,11 +1,11 @@
 <div align="center">
 
 <!-- Animated SVG Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1DA1F2,50:7B7CE6,100:D95B78&height=210&section=header&text=PULSE&fontSize=72&fontColor=ffffff&fontAlignY=38&desc=Autonomous%20Terminal%20Coding%20Agent%20%26%20Vibe-Coding%20CLI&descAlignY=62&descSize=18&animation=fadeIn" width="100%" alt="PULSE Banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1DA1F2,50:7B7CE6,100:D95B78&height=210&section=header&text=PULSE&fontSize=72&fontColor=ffffff&fontAlignY=38&desc=Autonomous%20Terminal%20Coding%20Agent%20and%20Vibe-Coding%20CLI&descAlignY=62&descSize=18&animation=fadeIn" width="100%" alt="PULSE Banner" />
 
 <!-- Animated Typing Tagline -->
 <a href="https://github.com/DEMON-dev911/Pulse-CLI">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=1DA1F2&center=true&vCenter=true&width=720&lines=Ultra-fast+compiled+Rust+runtime+with+zero+heavy+dependencies;Autonomous+file+editing%2C+unified+diffs%2C+and+shell+execution;Native+support+for+macOS%2C+Windows%2C+Linux%2C+and+Omarchy;Connects+to+local+FreeLLMAPI%2C+Ollama%2C+Gemini%2C+and+OpenAI" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&duration=3000&pause=1000&color=1DA1F2&center=true&vCenter=true&width=820&lines=Ultra-fast+compiled+Rust+runtime+with+zero+heavy+dependencies;Autonomous+file+editing%2C+unified+diffs%2C+and+shell+execution;Native+support+for+macOS%2C+Windows%2C+Linux%2C+and+Omarchy;Connects+to+local+FreeLLMAPI%2C+Ollama%2C+Gemini%2C+and+OpenAI" alt="Typing SVG" />
 </a>
 
 <br/>
