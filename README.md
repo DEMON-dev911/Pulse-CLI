@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated SVG Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1DA1F2,50:7B7CE6,100:D95B78&height=210&section=header&text=PULSE&fontSize=72&fontColor=ffffff&fontAlignY=38&desc=Autonomous%20Terminal%20Coding%20Agent%20and%20Vibe-Coding%20CLI&descAlignY=62&descSize=18&animation=fadeIn" width="100%" alt="PULSE Banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1DA1F2,50:7B7CE6,100:D95B78&height=210&section=header&text=PULSE&fontSize=72&fontColor=ffffff&fontAlignY=38&desc=Autonomous%20Terminal%20Coding%20Agent%20and%20Vibe-Coding%20CLI&descAlignY=62&descSize=18&animation=fadeIn&fontFamily=Orbitron" width="100%" alt="PULSE Banner" />
 
 <!-- Animated Typing Tagline -->
 <a href="https://github.com/DEMON-dev911/Pulse-CLI">
@@ -37,9 +37,9 @@
 
 ---
 
-## Overview
+## <kbd>01</kbd> `OVERVIEW`
 
-**Pulse** is an autonomous, terminal-native developer agent engineered in Rust. Designed for high-speed local execution, it operates directly inside your working directory to read codebases, apply atomic unified diffs, run test suites, manage git workflows, and interface with Model Context Protocol (MCP) servers.
+> **<samp>PULSE</samp>** *is an autonomous, terminal-native developer agent engineered in Rust. Designed for high-speed local execution, it operates directly inside your working directory to read codebases, apply atomic unified diffs, run test suites, manage git workflows, and interface with Model Context Protocol (MCP) servers.*
 
 ```text
   ██╗      ██████╗ ██╗   ██╗██╗     ███████╗███████╗
@@ -56,28 +56,35 @@
 
 ---
 
-## Core Architecture & Features
+## <kbd>02</kbd> `CORE ARCHITECTURE & FEATURES`
 
 | Capability | Description |
 | :--- | :--- |
-| **Zero-Config Ready** | Ships pre-configured with a built-in default API endpoint and credentials so you can launch and code immediately without initial setup. |
-| **Bring Your Own Key (BYOK)** | Easily override the built-in defaults with your own Gemini, Groq, OpenAI, Anthropic, OpenRouter, or local Ollama API keys. |
-| **Autonomous Tool Loop** | Reads files, previews color-coded unified diffs, applies atomic edits, and executes shell commands with live output streaming. |
-| **Project Context (`PULSE.md`)** | Automatically discovers `PULSE.md` or `.pulse.md` in the repository root to enforce project rules, architecture notes, and conventions. |
-| **Session Persistence** | Records every turn locally in JSONL format. Pick up previous work instantly using `--continue` or `--resume`. |
-| **Granular Safety Controls** | Interactive approval prompts (`[y]es / [n]o / [a]lways`), safe simulation via `--dry-run`, or full autonomy via `--yolo`. |
-| **Headless & CI/CD Piping** | Process piped standard input (`cat error.log \| pulse -p`) and emit structured machine-readable output with `--json`. |
-| **Custom Slash Commands** | Drop reusable Markdown prompt templates inside `.pulse/commands/` or `~/.config/pulse/commands/` to register dynamic `/commands`. |
-| **MCP Integration** | Connects to external `stdio` Model Context Protocol servers to extend tool capabilities dynamically. |
-| **Zero-Bloat Binary** | Compiles to a single standalone executable with sub-10ms startup time and minimal memory overhead. |
+| **`ZERO-CONFIG READY`** | Ships pre-configured with a built-in default API endpoint and credentials so you can launch and code immediately without initial setup. |
+| **`BRING YOUR OWN KEY (BYOK)`** | Easily override the built-in defaults with your own Gemini, Groq, OpenAI, Anthropic, OpenRouter, or local Ollama API keys. |
+| **`AUTONOMOUS TOOL LOOP`** | Reads files, previews color-coded unified diffs, applies atomic edits, and executes shell commands with live output streaming. |
+| **`PROJECT CONTEXT (PULSE.md)`** | Automatically discovers `PULSE.md` or `.pulse.md` in the repository root to enforce project rules, architecture notes, and conventions. |
+| **`SESSION PERSISTENCE`** | Records every turn locally in JSONL format. Pick up previous work instantly using `--continue` or `--resume`. |
+| **`GRANULAR SAFETY CONTROLS`** | Interactive approval prompts (`[y]es / [n]o / [a]lways`), safe simulation via `--dry-run`, or full autonomy via `--yolo`. |
+| **`HEADLESS & CI/CD PIPING`** | Process piped standard input (`cat error.log \| pulse -p`) and emit structured machine-readable output with `--json`. |
+| **`CUSTOM SLASH COMMANDS`** | Drop reusable Markdown prompt templates inside `.pulse/commands/` or `~/.config/pulse/commands/` to register dynamic `/commands`. |
+| **`MCP INTEGRATION`** | Connects to external `stdio` Model Context Protocol servers to extend tool capabilities dynamically. |
+| **`ZERO-BLOAT BINARY`** | Compiles to a single standalone executable with sub-10ms startup time and minimal memory overhead. |
+
+### <samp>HOW THE AUTONOMOUS LOOP WORKS</samp>
+
+1. **Context Discovery:** *Scans the working directory for `PULSE.md`, active Git branch state, language stack markers (`Cargo.toml`, `package.json`, `pyproject.toml`, `go.mod`), and local `.env` overrides.*
+2. **Streaming Inference:** *Dispatches prompts with full tool schemas to your active OpenAI-compatible gateway and streams reasoning tokens in real time.*
+3. **Atomic Tool Execution:** *Parses structured tool calls (`read_file`, `write_file`, `apply_diff`, `delete_file`, `run_shell`, `search_files`), renders unified diffs, and enforces permission policies before mutating disk state.*
+4. **Verification & Self-Correction:** *Captures compiler errors, linter warnings, or test failures from shell execution and iterates automatically until the task passes cleanly.*
 
 ---
 
-## Installation
+## <kbd>03</kbd> `INSTALLATION`
 
-Choose the installation method for your operating system below. All installers fetch pre-compiled native binaries directly from [GitHub Releases](https://github.com/DEMON-dev911/Pulse-CLI/releases).
+<sub>Choose the installation method for your operating system below. All installers fetch pre-compiled native binaries directly from <a href="https://github.com/DEMON-dev911/Pulse-CLI/releases">GitHub Releases</a>.</sub>
 
-### 1. macOS (Apple Silicon & Intel)
+### 1. macOS (`Apple Silicon & Intel`)
 
 Run the automated shell installer to download the native macOS binary and install it to your local path:
 
@@ -85,7 +92,7 @@ Run the automated shell installer to download the native macOS binary and instal
 curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh) | bash
 ```
 
-**Manual Installation (macOS):**
+**Manual Installation (`macOS`):**
 ```bash
 curl -L [https://github.com/DEMON-dev911/Pulse-CLI/releases/latest/download/pulse-macos-arm64.tar.gz](https://github.com/DEMON-dev911/Pulse-CLI/releases/latest/download/pulse-macos-arm64.tar.gz) -o pulse.tar.gz
 tar -xzf pulse.tar.gz
@@ -96,17 +103,17 @@ rm pulse.tar.gz
 
 ---
 
-### 2. Linux (Ubuntu, Debian, Fedora, Arch)
+### 2. Linux (`Ubuntu, Debian, Fedora, Arch`)
 
-The unified installer automatically detects Linux x86_64 and installs the static `musl` binary into `~/.local/bin/pulse` without requiring root privileges:
+The unified installer automatically detects Linux `x86_64` and installs the static `musl` binary into `~/.local/bin/pulse` without requiring root privileges:
 
 ```bash
 curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh) | bash
 ```
 
-> **Note:** Ensure `~/.local/bin` is included in your shell `PATH`. Add `export PATH="$HOME/.local/bin:$PATH"` to your `~/.bashrc` or `~/.zshrc` if needed.
+> <sub><b>PATH NOTE:</b> Ensure <code>~/.local/bin</code> is included in your shell <code>PATH</code>. Add <code>export PATH="$HOME/.local/bin:$PATH"</code> to your <code>~/.bashrc</code> or <code>~/.zshrc</code> if needed.</sub>
 
-**Manual Installation (Linux):**
+**Manual Installation (`Linux`):**
 ```bash
 mkdir -p ~/.local/bin
 curl -L [https://github.com/DEMON-dev911/Pulse-CLI/releases/latest/download/pulse-linux-x86_64.tar.gz](https://github.com/DEMON-dev911/Pulse-CLI/releases/latest/download/pulse-linux-x86_64.tar.gz) -o pulse.tar.gz
@@ -121,12 +128,12 @@ rm pulse.tar.gz
 
 Pulse is optimized for Wayland terminal emulators (`foot`, `ghostty`, `kitty`, `alacritty`) and Omarchy's user-space agent architecture.
 
-**Option A: One-Line User-Space Install (Recommended for Omarchy):**
+**Option A — One-Line User-Space Install (`Recommended for Omarchy`):**
 ```bash
 curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh) | bash
 ```
 
-**Option B: Native Pacman Package via `PKGBUILD`:**
+**Option B — Native Pacman Package via `PKGBUILD`:**
 ```bash
 git clone [https://github.com/DEMON-dev911/Pulse-CLI.git](https://github.com/DEMON-dev911/Pulse-CLI.git)
 cd Pulse-CLI
@@ -140,7 +147,7 @@ bind = $mainMod, P, exec, foot --title="Pulse CLI" -e pulse
 
 ---
 
-### 4. Windows (Windows 10 / 11 x86_64)
+### 4. Windows (`Windows 10 / 11 x86_64`)
 
 Open **PowerShell** and run the automated Windows installer to download `pulse.exe` and configure your User `PATH`:
 
@@ -148,7 +155,7 @@ Open **PowerShell** and run the automated Windows installer to download `pulse.e
 irm [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.ps1](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.ps1) | iex
 ```
 
-**Manual Installation (Windows PowerShell):**
+**Manual Installation (`Windows PowerShell`):**
 ```powershell
 New-Item -ItemType Directory -Force -Path "$env:LOCALAPPDATA\Pulse" | Out-Null
 Invoke-WebRequest -Uri "[https://github.com/DEMON-dev911/Pulse-CLI/releases/latest/download/pulse-windows-x86_64.zip](https://github.com/DEMON-dev911/Pulse-CLI/releases/latest/download/pulse-windows-x86_64.zip)" -OutFile "$env:TEMP\pulse.zip"
@@ -157,21 +164,21 @@ Remove-Item "$env:TEMP\pulse.zip"
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";$env:LOCALAPPDATA\Pulse", "User")
 ```
 
-> Restart your terminal window after installation so the updated `PATH` takes effect.
+> <sub><b>RESTART REQUIRED:</b> Restart your terminal window after installation so the updated <code>PATH</code> takes effect.</sub>
 
 ---
 
-## Configuration & API Keys
+## <kbd>04</kbd> `CONFIGURATION & API KEYS`
 
 Pulse works **immediately out of the box** using the pre-configured built-in API credentials—no manual configuration is required to start using it.
 
 If you prefer to use your own API keys, personal rate limits, or a local LLM server, you can override the built-in defaults at any time.
 
-### Option 1: Use the Built-In API Key (Zero Setup)
+### Option 1 — Use the Built-In API Key (`Zero Setup`)
 
 Simply run `pulse` in your terminal right after installation. Pulse will automatically authenticate using its pre-packaged default gateway and fallback keys.
 
-### Option 2: Add Your Own API Keys (Optional)
+### Option 2 — Add Your Own API Keys (`Optional`)
 
 To override the default credentials with your own keys, create a `.env` file at `~/.config/pulse/.env` (Linux/macOS), `%USERPROFILE%\.config\pulse\.env` (Windows), or inside your project root:
 
@@ -192,11 +199,11 @@ PULSE_DEFAULT_TIMEOUT_SECS="30"
 PULSE_AUTO_FALLBACK="true"
 ```
 
-> **Configuration Precedence:** Shell environment variables take highest priority, followed by a local project `.env`, then `~/.config/pulse/.env`, and finally the built-in default API keys. You can also switch providers interactively at any time using the `/model` slash command.
+> <sub><b>CONFIGURATION PRECEDENCE:</b> Shell environment variables take highest priority, followed by a local project <code>.env</code>, then <code>~/.config/pulse/.env</code>, and finally the built-in default API keys. You can also switch providers interactively at any time using the <code>/model</code> slash command.</sub>
 
 ---
 
-## Usage Guide
+## <kbd>05</kbd> `USAGE GUIDE`
 
 ### 1. Interactive Terminal REPL
 
@@ -249,7 +256,44 @@ Inside the interactive REPL, type `/` to access built-in and custom commands:
 
 ---
 
-## Extending Pulse with Custom Commands
+## <kbd>06</kbd> `PROJECT CONTEXT & MCP SERVERS`
+
+### Project Rules (`PULSE.md`)
+
+Place a `PULSE.md` (or `.pulse.md`) file in your repository root so Pulse automatically loads project conventions, build commands, and architectural constraints at startup:
+
+```markdown
+# Project Rules
+- Always run `cargo clippy -- -D warnings` after modifying Rust files.
+- Prefer `thiserror` for library errors and `anyhow` in binary entrypoints.
+- Never commit secrets or `.env` files.
+```
+
+### Model Context Protocol (`mcp.json`)
+
+Connect external tools, databases, or browser automation servers by creating `~/.config/pulse/mcp.json` or `.pulse/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_your_token"
+      }
+    }
+  }
+}
+```
+
+---
+
+## <kbd>07</kbd> `EXTENDING PULSE WITH CUSTOM COMMANDS`
 
 Create a Markdown file inside `.pulse/commands/` (project-scoped) or `~/.config/pulse/commands/` (global). Use `$ARGUMENTS` to capture trailing user input.
 
@@ -264,9 +308,9 @@ Once saved, invoke `/review src/main.rs` directly inside the Pulse prompt.
 
 ---
 
-## Uninstallation
+## <kbd>08</kbd> `UNINSTALLATION`
 
-Remove Pulse and its local configuration/session files completely using the instructions for your operating system.
+<sub>Remove Pulse and its local configuration/session files completely using the instructions for your operating system.</sub>
 
 ### 1. macOS
 
@@ -275,7 +319,7 @@ Remove Pulse and its local configuration/session files completely using the inst
 curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.sh](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.sh) | bash
 ```
 
-**Manual Removal (Binary + Config/Sessions):**
+**Manual Removal (`Binary + Config/Sessions`):**
 ```bash
 rm -f /usr/local/bin/pulse ~/.local/bin/pulse
 rm -rf ~/.config/pulse ~/.local/share/pulse
@@ -295,7 +339,7 @@ curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninst
 sudo pacman -Rns pulse-bin
 ```
 
-**Manual Removal (Binary + Config/Sessions):**
+**Manual Removal (`Binary + Config/Sessions`):**
 ```bash
 rm -f ~/.local/bin/pulse /usr/local/bin/pulse
 rm -rf ~/.config/pulse ~/.local/share/pulse
@@ -303,14 +347,14 @@ rm -rf ~/.config/pulse ~/.local/share/pulse
 
 ---
 
-### 3. Windows (PowerShell)
+### 3. Windows (`PowerShell`)
 
 **Using the Uninstall Script:**
 ```powershell
 irm [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.ps1](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.ps1) | iex
 ```
 
-**Manual Removal (Binary, Config & PATH Cleanup):**
+**Manual Removal (`Binary, Config & PATH Cleanup`):**
 ```powershell
 # Remove binary and local application data
 Remove-Item -Recurse -Force "$env:LOCALAPPDATA\Pulse" -ErrorAction SilentlyContinue
