@@ -1,11 +1,11 @@
 <div align="center">
 
-<!-- Animated SVG Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1DA1F2,50:7B7CE6,100:D95B78&height=210&section=header&text=PULSE&fontSize=72&fontColor=ffffff&fontAlignY=38&desc=Autonomous%20Terminal%20Coding%20Agent%20and%20Vibe-Coding%20CLI&descAlignY=62&descSize=18&animation=fadeIn" width="100%" alt="PULSE Banner" />
+<!-- Animated SVG Header Banner with Custom Google Font & Cyan-to-Rose Gradient -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5FF,50:38BDF8,100:D95B78&height=230&section=header&text=PULSE&fontSize=76&fontColor=0B1120&fontAlignY=38&desc=Autonomous%20Terminal%20Coding%20Agent%20and%20Vibe-Coding%20CLI&descAlignY=63&descSize=17&animation=twinkling&fontFamily=Orbitron" width="100%" alt="PULSE Banner" />
 
-<!-- Animated Typing Tagline -->
+<!-- Animated Typing Tagline in Fira Code Monospace Font -->
 <a href="https://github.com/DEMON-dev911/Pulse-CLI">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&duration=3000&pause=1000&color=1DA1F2&center=true&vCenter=true&width=820&lines=Ultra-fast+compiled+Rust+runtime+with+zero+heavy+dependencies;Autonomous+file+editing%2C+unified+diffs%2C+and+shell+execution;Native+support+for+macOS%2C+Windows%2C+Linux%2C+and+Omarchy;Works+out+of+the+box+with+built-in+credentials+or+your+own+API+keys" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2800&pause=900&color=00E5FF&center=true&vCenter=true&width=840&lines=Ultra-fast+compiled+Rust+runtime+with+zero+heavy+dependencies;Autonomous+file+editing%2C+unified+diffs%2C+and+shell+execution;Native+support+for+macOS%2C+Windows%2C+Linux%2C+and+Omarchy;Works+out+of+the+box+with+built-in+credentials+or+your+own+API+keys" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -13,71 +13,73 @@
 <!-- Live GitHub Repository Badges -->
 <p>
   <a href="https://github.com/DEMON-dev911/Pulse-CLI/stargazers">
-    <img src="https://img.shields.io/github/stars/DEMON-dev911/Pulse-CLI?style=for-the-badge&logo=github&color=1DA1F2&labelColor=0D1117" alt="GitHub Stars" />
+    <img src="https://img.shields.io/github/stars/DEMON-dev911/Pulse-CLI?style=for-the-badge&logo=github&color=00E5FF&labelColor=0D1117" alt="GitHub Stars" />
   </a>
   <a href="https://github.com/DEMON-dev911/Pulse-CLI/releases/latest">
-    <img src="https://img.shields.io/github/v/release/DEMON-dev911/Pulse-CLI?style=for-the-badge&logo=semanticrelease&color=7B7CE6&labelColor=0D1117" alt="Latest Release" />
+    <img src="https://img.shields.io/github/v/release/DEMON-dev911/Pulse-CLI?style=for-the-badge&logo=semanticrelease&color=38BDF8&labelColor=0D1117" alt="Latest Release" />
   </a>
   <a href="https://github.com/DEMON-dev911/Pulse-CLI/releases">
-    <img src="https://img.shields.io/github/downloads/DEMON-dev911/Pulse-CLI/total?style=for-the-badge&logo=icloud&color=D95B78&labelColor=0D1117" alt="Total Downloads" />
+    <img src="https://img.shields.io/github/downloads/DEMON-dev911/Pulse-CLI/total?style=for-the-badge&logo=icloud&color=7B7CE6&labelColor=0D1117" alt="Total Downloads" />
   </a>
   <a href="https://github.com/DEMON-dev911/Pulse-CLI/network/members">
-    <img src="https://img.shields.io/github/forks/DEMON-dev911/Pulse-CLI?style=for-the-badge&logo=git&color=38BDF8&labelColor=0D1117" alt="Forks" />
+    <img src="https://img.shields.io/github/forks/DEMON-dev911/Pulse-CLI?style=for-the-badge&logo=git&color=D95B78&labelColor=0D1117" alt="Forks" />
   </a>
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/Built_With-Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/Platform-macOS_%7C_Linux_%7C_Windows-111827?style=flat-square" alt="Platforms" />
-  <img src="https://img.shields.io/badge/Arch_%2F_Omarchy-Ready-1793D1?style=flat-square&logo=archlinux&logoColor=white" alt="Arch Linux" />
-  <img src="https://img.shields.io/badge/MCP-Compatible-7B7CE6?style=flat-square&logo=protocol&logoColor=white" alt="MCP" />
+  <img src="https://img.shields.io/badge/Built_With-Rust-000000?style=flat-square&logo=rust&logoColor=00E5FF" alt="Rust" />
+  <img src="https://img.shields.io/badge/Platform-macOS_%7C_Linux_%7C_Windows-0D1117?style=flat-square" alt="Platforms" />
+  <img src="https://img.shields.io/badge/Arch_%2F_Omarchy-Ready-00E5FF?style=flat-square&logo=archlinux&logoColor=0D1117" alt="Arch Linux" />
+  <img src="https://img.shields.io/badge/MCP-Compatible-38BDF8?style=flat-square&logo=protocol&logoColor=0D1117" alt="MCP" />
 </p>
 
 </div>
 
 ---
 
-## Overview
+<!-- Styled Section Header in Orbitron Display Font -->
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=1&pause=100000&color=00E5FF&vCenter=true&width=400&height=36&lines=01+%2F%2F+OVERVIEW" alt="Overview" />
 
-**Pulse** is an autonomous, terminal-native developer agent engineered in Rust. Designed for high-speed local execution, it operates directly inside your working directory to read codebases, apply atomic unified diffs, run test suites, manage git workflows, and interface with Model Context Protocol (MCP) servers.
+> <b><samp>PULSE</samp></b> <i>is an autonomous, terminal-native developer agent engineered in Rust. Designed for high-speed local execution, it operates directly inside your working directory to read codebases, apply atomic unified diffs, run test suites, manage git workflows, and interface with Model Context Protocol (MCP) servers.</i>
 
-```text
-  ██╗      ██████╗ ██╗   ██╗██╗     ███████╗███████╗
-  ╚██╗     ██╔══██╗██║   ██║██║     ██╔════╝██╔════╝
-   ╚██╗    ██████╔╝██║   ██║██║     ███████╗█████╗  
-   ██╔╝    ██╔═══╝ ██║   ██║██║     ╚════██║██╔══╝  
-  ██╔╝     ██║     ╚██████╔╝███████╗███████║███████╗
-  ╚═╝      ╚═╝      ╚═════╝ ╚══════╝╚══════╝╚══════╝
-
-  PULSE · Autonomous Coding Runtime
-  gateway  [http://127.0.0.1:31415/v1](http://127.0.0.1:31415/v1) [online]
-  context  ~/project · branch main · stack Rust
+<!-- Electric Cyan Styled Terminal Overview Block -->
+```diff
++   ██╗      ██████╗ ██╗   ██╗██╗     ███████╗███████╗
++   ╚██╗     ██╔══██╗██║   ██║██║     ██╔════╝██╔════╝
++    ╚██╗    ██████╔╝██║   ██║██║     ███████╗█████╗  
++    ██╔╝    ██╔═══╝ ██║   ██║██║     ╚════██║██╔══╝  
++   ██╔╝     ██║     ╚██████╔╝███████╗███████║███████╗
++   ╚═╝      ╚═╝      ╚═════╝ ╚══════╝╚══════╝╚══════╝
++ 
++   PULSE v0.2.0  ·  Autonomous Coding Runtime
++   gateway   [http://127.0.0.1:31415/v1](http://127.0.0.1:31415/v1)  [online]
++   context   ~/project · branch main · stack Rust · theme Electric Cyan
 ```
 
 ---
 
-## Core Architecture & Features
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=1&pause=100000&color=00E5FF&vCenter=true&width=520&height=36&lines=02+%2F%2F+CORE+ARCHITECTURE" alt="Core Architecture" />
 
-| Capability | Description |
+| Capability | Technical Specification |
 | :--- | :--- |
-| **Zero-Config Ready** | Ships pre-configured with a built-in default API endpoint and credentials so you can launch and code immediately without initial setup. |
-| **Bring Your Own Key (BYOK)** | Easily override the built-in defaults with your own Gemini, Groq, OpenAI, Anthropic, OpenRouter, or local Ollama API keys. |
-| **Autonomous Tool Loop** | Reads files, previews color-coded unified diffs, applies atomic edits, and executes shell commands with live output streaming. |
-| **Project Context (`PULSE.md`)** | Automatically discovers `PULSE.md` or `.pulse.md` in the repository root to enforce project rules, architecture notes, and conventions. |
-| **Session Persistence** | Records every turn locally in JSONL format. Pick up previous work instantly using `--continue` or `--resume`. |
-| **Granular Safety Controls** | Interactive approval prompts (`[y]es / [n]o / [a]lways`), safe simulation via `--dry-run`, or full autonomy via `--yolo`. |
-| **Headless & CI/CD Piping** | Process piped standard input (`cat error.log \| pulse -p`) and emit structured machine-readable output with `--json`. |
-| **Custom Slash Commands** | Drop reusable Markdown prompt templates inside `.pulse/commands/` or `~/.config/pulse/commands/` to register dynamic `/commands`. |
-| **MCP Integration** | Connects to external `stdio` Model Context Protocol servers to extend tool capabilities dynamically. |
-| **Zero-Bloat Binary** | Compiles to a single standalone executable with sub-10ms startup time and minimal memory overhead. |
+| **`ZERO-CONFIG READY`** | Ships pre-configured with a built-in default API endpoint and credentials so you can launch and code immediately without initial setup. |
+| **`BYOK OVERRIDE`** | Easily override the built-in defaults with your own Gemini, Groq, OpenAI, Anthropic, OpenRouter, or local Ollama API keys. |
+| **`AUTONOMOUS LOOP`** | Reads files, previews color-coded unified diffs, applies atomic edits, and executes shell commands with live output streaming. |
+| **`PROJECT CONTEXT`** | Automatically discovers `PULSE.md` or `.pulse.md` in the repository root to enforce project rules, architecture notes, and conventions. |
+| **`SESSION RESUME`** | Records every turn locally in JSONL format. Pick up previous work instantly using `--continue` or `--resume`. |
+| **`SAFETY CONTROLS`** | Interactive approval prompts (`[y]es / [n]o / [a]lways`), safe simulation via `--dry-run`, or full autonomy via `--yolo`. |
+| **`HEADLESS PIPING`** | Process piped standard input (`cat error.log \| pulse -p`) and emit structured machine-readable output with `--json`. |
+| **`CUSTOM COMMANDS`** | Drop reusable Markdown prompt templates inside `.pulse/commands/` or `~/.config/pulse/commands/` to register dynamic `/commands`. |
+| **`MCP PROTOCOL`** | Connects to external `stdio` Model Context Protocol servers to extend tool capabilities dynamically. |
+| **`NATIVE BINARY`** | Compiles to a single standalone executable with sub-10ms startup time and minimal memory overhead. |
 
 ---
 
-## Installation
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=1&pause=100000&color=00E5FF&vCenter=true&width=440&height=36&lines=03+%2F%2F+INSTALLATION" alt="Installation" />
 
 Choose the installation method for your operating system below. All installers fetch pre-compiled native binaries directly from [GitHub Releases](https://github.com/DEMON-dev911/Pulse-CLI/releases).
 
-### 1. macOS (Apple Silicon & Intel)
+### 1. macOS (`Apple Silicon & Intel`)
 
 Run the automated shell installer to download the native macOS binary and install it to your local path:
 
@@ -96,7 +98,7 @@ rm pulse.tar.gz
 
 ---
 
-### 2. Linux (Ubuntu, Debian, Fedora, Arch)
+### 2. Linux (`Ubuntu, Debian, Fedora, Arch`)
 
 The unified installer automatically detects Linux x86_64 and installs the static `musl` binary into `~/.local/bin/pulse` without requiring root privileges:
 
@@ -104,7 +106,7 @@ The unified installer automatically detects Linux x86_64 and installs the static
 curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh) | bash
 ```
 
-> **Note:** Ensure `~/.local/bin` is included in your shell `PATH`. Add `export PATH="$HOME/.local/bin:$PATH"` to your `~/.bashrc` or `~/.zshrc` if needed.
+> <sub><b>PATH NOTE:</b> Ensure <code>~/.local/bin</code> is included in your shell <code>PATH</code>. Add <code>export PATH="$HOME/.local/bin:$PATH"</code> to your <code>~/.bashrc</code> or <code>~/.zshrc</code> if needed.</sub>
 
 **Manual Installation (Linux):**
 ```bash
@@ -121,12 +123,12 @@ rm pulse.tar.gz
 
 Pulse is optimized for Wayland terminal emulators (`foot`, `ghostty`, `kitty`, `alacritty`) and Omarchy's user-space agent architecture.
 
-**Option A: One-Line User-Space Install (Recommended for Omarchy):**
+**Option A — One-Line User-Space Install (Recommended for Omarchy):**
 ```bash
 curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh) | bash
 ```
 
-**Option B: Native Pacman Package via `PKGBUILD`:**
+**Option B — Native Pacman Package via `PKGBUILD`:**
 ```bash
 git clone [https://github.com/DEMON-dev911/Pulse-CLI.git](https://github.com/DEMON-dev911/Pulse-CLI.git)
 cd Pulse-CLI
@@ -140,7 +142,7 @@ bind = $mainMod, P, exec, foot --title="Pulse CLI" -e pulse
 
 ---
 
-### 4. Windows (Windows 10 / 11 x86_64)
+### 4. Windows (`Windows 10 / 11 x86_64`)
 
 Open **PowerShell** and run the automated Windows installer to download `pulse.exe` and configure your User `PATH`:
 
@@ -157,21 +159,21 @@ Remove-Item "$env:TEMP\pulse.zip"
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";$env:LOCALAPPDATA\Pulse", "User")
 ```
 
-> Restart your terminal window after installation so the updated `PATH` takes effect.
+> <sub><b>RESTART REQUIRED:</b> Restart your terminal window after installation so the updated <code>PATH</code> takes effect.</sub>
 
 ---
 
-## Configuration & API Keys
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=1&pause=100000&color=00E5FF&vCenter=true&width=560&height=36&lines=04+%2F%2F+CONFIGURATION+%26+API+KEYS" alt="Configuration" />
 
 Pulse works **immediately out of the box** using the pre-configured built-in API credentials—no manual configuration is required to start using it.
 
 If you prefer to use your own API keys, personal rate limits, or a local LLM server, you can override the built-in defaults at any time.
 
-### Option 1: Use the Built-In API Key (Zero Setup)
+### Option A — Use the Built-In API Key (`Zero Setup`)
 
-Simply run `pulse` in your terminal right after installation. Pulse will automatically authenticate using its pre-packaged default gateway and fallback keys.
+Simply run `pulse` in your terminal right after installation. Pulse automatically authenticates using its pre-packaged default gateway and fallback keys.
 
-### Option 2: Add Your Own API Keys (Optional)
+### Option B — Add Your Own API Keys (`Optional`)
 
 To override the default credentials with your own keys, create a `.env` file at `~/.config/pulse/.env` (Linux/macOS), `%USERPROFILE%\.config\pulse\.env` (Windows), or inside your project root:
 
@@ -192,13 +194,13 @@ PULSE_DEFAULT_TIMEOUT_SECS="30"
 PULSE_AUTO_FALLBACK="true"
 ```
 
-> **Configuration Precedence:** Shell environment variables take highest priority, followed by a local project `.env`, then `~/.config/pulse/.env`, and finally the built-in default API keys. You can also switch providers interactively at any time using the `/model` slash command.
+> <sub><b>PRECEDENCE ORDER:</b> Shell environment variables take highest priority, followed by a local project <code>.env</code>, then <code>~/.config/pulse/.env</code>, and finally the built-in default API keys. Switch providers interactively anytime with <code>/model</code>.</sub>
 
 ---
 
-## Usage Guide
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=1&pause=100000&color=00E5FF&vCenter=true&width=420&height=36&lines=05+%2F%2F+USAGE+GUIDE" alt="Usage Guide" />
 
-### 1. Interactive Terminal REPL
+### Interactive Terminal REPL
 
 Launch Pulse inside any project directory to start an interactive coding session:
 
@@ -206,7 +208,7 @@ Launch Pulse inside any project directory to start an interactive coding session
 pulse
 ```
 
-### 2. Single-Turn & Headless Execution (`-p`)
+### Single-Turn & Headless Execution (`-p`)
 
 Execute a direct instruction or pipe logs/files directly into Pulse for automated workflows and CI/CD pipelines:
 
@@ -221,7 +223,7 @@ cargo test 2>&1 | pulse -p "Analyze the failing test output and patch the root c
 pulse -p --json "Summarize the repository architecture"
 ```
 
-### 3. CLI Flags Reference
+### CLI Flags Reference
 
 | Flag | Alias | Description |
 | :--- | :--- | :--- |
@@ -233,7 +235,7 @@ pulse -p --json "Summarize the repository architecture"
 | `--yolo` | `--yes` | Bypass interactive confirmation prompts for trusted autonomous runs. |
 | `--model <NAME>` | `-m` | Override the active model for the current session. |
 
-### 4. Interactive Slash Commands
+### Interactive Slash Commands
 
 Inside the interactive REPL, type `/` to access built-in and custom commands:
 
@@ -249,7 +251,7 @@ Inside the interactive REPL, type `/` to access built-in and custom commands:
 
 ---
 
-## Extending Pulse with Custom Commands
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=1&pause=100000&color=00E5FF&vCenter=true&width=480&height=36&lines=06+%2F%2F+CUSTOM+COMMANDS" alt="Custom Commands" />
 
 Create a Markdown file inside `.pulse/commands/` (project-scoped) or `~/.config/pulse/commands/` (global). Use `$ARGUMENTS` to capture trailing user input.
 
@@ -264,7 +266,7 @@ Once saved, invoke `/review src/main.rs` directly inside the Pulse prompt.
 
 ---
 
-## Uninstallation
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=1&pause=100000&color=00E5FF&vCenter=true&width=440&height=36&lines=07+%2F%2F+UNINSTALLATION" alt="Uninstallation" />
 
 Remove Pulse and its local configuration/session files completely using the instructions for your operating system.
 
@@ -303,7 +305,7 @@ rm -rf ~/.config/pulse ~/.local/share/pulse
 
 ---
 
-### 3. Windows (PowerShell)
+### 3. Windows (`PowerShell`)
 
 **Using the Uninstall Script:**
 ```powershell
@@ -327,7 +329,7 @@ $newPath = ($currentPath -split ';' \vert{} Where-Object {$_ -ne $pulseDir -and$
 
 <div align="center">
 
-<!-- Animated Footer Wave -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:D95B78,50:7B7CE6,100:1DA1F2&height=110&section=footer" width="100%" alt="Footer" />
+<!-- Animated Cyan-to-Rose Footer Wave -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:D95B78,50:38BDF8,100:00E5FF&height=120&section=footer&animation=twinkling" width="100%" alt="Footer" />
 
 </div>
