@@ -33,6 +33,8 @@
   <img src="https://img.shields.io/badge/MCP-Compatible-7B7CE6?style=flat-square&logo=protocol&logoColor=white" alt="MCP" />
 </p>
 
+<sub>Created by Virat Kumar</sub>
+
 </div>
 
 ---
@@ -84,12 +86,12 @@
 
 <sub>Choose the installation method for your operating system below. All installers fetch pre-compiled native binaries directly from <a href="https://github.com/DEMON-dev911/Pulse-CLI/releases">GitHub Releases</a>.</sub>
 
-### 1. macOS (`Apple Silicon & Intel`)
+### 1. macOS (`Apple Silicon`)
 
 Run the automated shell installer to download the native macOS binary and install it to your local path:
 
 ```bash
-curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh) | bash
+curl -fsSL https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh | bash
 ```
 
 **Manual Installation (`macOS`):**
@@ -108,7 +110,7 @@ rm pulse.tar.gz
 The unified installer automatically detects Linux `x86_64` and installs the static `musl` binary into `~/.local/bin/pulse` without requiring root privileges:
 
 ```bash
-curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh) | bash
+curl -fsSL https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh | bash
 ```
 
 > <sub><b>PATH NOTE:</b> Ensure <code>~/.local/bin</code> is included in your shell <code>PATH</code>. Add <code>export PATH="$HOME/.local/bin:$PATH"</code> to your <code>~/.bashrc</code> or <code>~/.zshrc</code> if needed.</sub>
@@ -130,7 +132,7 @@ Pulse is optimized for Wayland terminal emulators (`foot`, `ghostty`, `kitty`, `
 
 **Option A — One-Line User-Space Install (`Recommended for Omarchy`):**
 ```bash
-curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh) | bash
+curl -fsSL https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.sh | bash
 ```
 
 **Option B — Native Pacman Package via `PKGBUILD`:**
@@ -152,16 +154,16 @@ bind = $mainMod, P, exec, foot --title="Pulse CLI" -e pulse
 Open **PowerShell** and run the automated Windows installer to download `pulse.exe` and configure your User `PATH`:
 
 ```powershell
-irm [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.ps1](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.ps1) | iex
+irm https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/install.ps1 | iex
 ```
 
 **Manual Installation (`Windows PowerShell`):**
 ```powershell
-New-Item -ItemType Directory -Force -Path "$env:LOCALAPPDATA\Pulse" | Out-Null
-Invoke-WebRequest -Uri "[https://github.com/DEMON-dev911/Pulse-CLI/releases/latest/download/pulse-windows-x86_64.zip](https://github.com/DEMON-dev911/Pulse-CLI/releases/latest/download/pulse-windows-x86_64.zip)" -OutFile "$env:TEMP\pulse.zip"
-Expand-Archive -Path "$env:TEMP\pulse.zip" -DestinationPath "$env:LOCALAPPDATA\Pulse" -Force
+New-Item -ItemType Directory -Force -Path "$env:LOCALAPPDATA\Programs\Pulse" | Out-Null
+Invoke-WebRequest -Uri "https://github.com/DEMON-dev911/Pulse-CLI/releases/latest/download/pulse-windows-x86_64.zip" -OutFile "$env:TEMP\pulse.zip"
+Expand-Archive -Path "$env:TEMP\pulse.zip" -DestinationPath "$env:LOCALAPPDATA\Programs\Pulse" -Force
 Remove-Item "$env:TEMP\pulse.zip"
-[Environment]::SetEnvironmentVariable("Path", $env:Path + ";$env:LOCALAPPDATA\Pulse", "User")
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";$env:LOCALAPPDATA\Programs\Pulse", "User")
 ```
 
 > <sub><b>RESTART REQUIRED:</b> Restart your terminal window after installation so the updated <code>PATH</code> takes effect.</sub>
@@ -316,7 +318,7 @@ Once saved, invoke `/review src/main.rs` directly inside the Pulse prompt.
 
 **Using the Uninstall Script:**
 ```bash
-curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.sh](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.sh) | bash
+curl -fsSL https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.sh | bash
 ```
 
 **Manual Removal (`Binary + Config/Sessions`):**
@@ -331,7 +333,7 @@ rm -rf ~/.config/pulse ~/.local/share/pulse
 
 **Using the Uninstall Script:**
 ```bash
-curl -fsSL [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.sh](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.sh) | bash
+curl -fsSL https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.sh | bash
 ```
 
 **If Installed via Arch `PKGBUILD` / `pacman`:**
@@ -351,19 +353,19 @@ rm -rf ~/.config/pulse ~/.local/share/pulse
 
 **Using the Uninstall Script:**
 ```powershell
-irm [https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.ps1](https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.ps1) | iex
+irm https://raw.githubusercontent.com/DEMON-dev911/Pulse-CLI/main/uninstall.ps1 | iex
 ```
 
 **Manual Removal (`Binary, Config & PATH Cleanup`):**
 ```powershell
 # Remove binary and local application data
-Remove-Item -Recurse -Force "$env:LOCALAPPDATA\Pulse" -ErrorAction SilentlyContinue
+Remove-Item -Recurse -Force "$env:LOCALAPPDATA\Programs\Pulse" -ErrorAction SilentlyContinue
 Remove-Item -Recurse -Force "$env:USERPROFILE\.config\pulse" -ErrorAction SilentlyContinue
 
 # Remove Pulse from User PATH
-$pulseDir = "$env:LOCALAPPDATA\Pulse"
+$pulseDir = "$env:LOCALAPPDATA\Programs\Pulse"
 $currentPath = [Environment]::GetEnvironmentVariable("Path", "User")
-$newPath = ($currentPath -split ';' \vert{} Where-Object {$_ -ne $pulseDir -and$_ -ne '' }) -join ';'
+$newPath = ($currentPath -split ';' | Where-Object { $_ -ne $pulseDir -and $_ -ne '' }) -join ';'
 [Environment]::SetEnvironmentVariable("Path", $newPath, "User")
 ```
 
